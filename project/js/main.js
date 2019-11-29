@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function getWorkflows() {
-  var url = "https://api.hubapi.com/automation/v3/workflows/?hapikey=demo"
+  var url = "https://api.hubapi.com/automation/v3/workflows/?hapikey="+apiKey;
 
   $.ajax(url,{success: function(data){
     console.log(data);
